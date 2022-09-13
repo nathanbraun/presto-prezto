@@ -156,9 +156,9 @@ if [[ "$OS" == "Linux" ]] || [[ "$OS" == "Darwin" ]] ; then
         sudo usermod -s /usr/bin/zsh $(whoami) &> /dev/null
         sudo usermod -s /usr/bin/zsh root &> /dev/null
     fi
-    if mv -n ~/.zshrc ~/.zshrc_backup_$(date +"%Y-%m-%d_%H:%M:%S") &> /dev/null; then
-        echo -e "\n--> Backing up the current .zshrc config to .zshrc_backup-date"
-    fi
+    # if mv -n ~/.zshrc ~/.zshrc_backup_$(date +"%Y-%m-%d_%H:%M:%S") &> /dev/null; then
+    #     echo -e "\n--> Backing up the current .zshrc config to .zshrc_backup-date"
+    # fi
 
     #--------------------------------------------------
     # LSDeluxe
