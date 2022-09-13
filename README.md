@@ -25,14 +25,14 @@ It also includes the following aliases and functions in `.zshrc`:
 
 Run the installation script:
 ``` bash
-curl -fsSL https://raw.githubusercontent.com/JGroxz/presto-prezto/main/presto-prezto.sh | bash
+curl -fsSL https://raw.githubusercontent.com/nathanbraun/presto-prezto/main/presto-prezto.sh | bash
 ```
 
 ### Advanced (with Meslo Nerd Font)
 
 1. Run the installation script with the `--font` flag:
    ``` bash
-   curl -fsSL https://raw.githubusercontent.com/nbraun/presto-prezto/main/presto-prezto.sh | bash -s -- --font
+   curl -fsSL https://raw.githubusercontent.com/nathanbraun/presto-prezto/main/presto-prezto.sh | bash -s -- --font
    ```
 2. Set up your terminal to use the new Meslo Nerd Font by following the [instructions here](https://github.com/romkatv/powerlevel10k#meslo-nerd-font-patched-for-powerlevel10k).
 
