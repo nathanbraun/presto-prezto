@@ -188,12 +188,12 @@ if [[ "$OS" == "Linux" ]] || [[ "$OS" == "Darwin" ]] ; then
     # ln -sf ~/.zprezto/runcoms/zshrc ~/.zshrc
 
     # Patch Prezto runcoms
-    echo -e "\nPatching Prezto runcoms"
-    (cd ~/.zprezto/runcoms/ && curl -O https://raw.githubusercontent.com/JGroxz/presto-prezto/main/zshrc) &> /dev/null
-    (cd ~/.zprezto/runcoms/ && curl -O https://raw.githubusercontent.com/JGroxz/presto-prezto/main/zpreztorc) &> /dev/null
-    if [[ "$OS" == "Linux" ]]; then
-        sudo cp /home/"$(whoami)"/.zshrc /root/
-    fi
+    # echo -e "\nPatching Prezto runcoms"
+    # (cd ~/.zprezto/runcoms/ && curl -O https://raw.githubusercontent.com/JGroxz/presto-prezto/main/zshrc) &> /dev/null
+    # (cd ~/.zprezto/runcoms/ && curl -O https://raw.githubusercontent.com/JGroxz/presto-prezto/main/zpreztorc) &> /dev/null
+    # if [[ "$OS" == "Linux" ]]; then
+    #     sudo cp /home/"$(whoami)"/.zshrc /root/
+    # fi
 
     echo -e "\nPrezto configuration complete (plugins will be installed on the first shell run)"
 
