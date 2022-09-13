@@ -179,13 +179,13 @@ if [[ "$OS" == "Linux" ]] || [[ "$OS" == "Darwin" ]] ; then
     git clone --recursive https://github.com/sorin-ionescu/prezto.git "${ZDOTDIR:-$HOME}/.zprezto"
 
     # Create symlinks to link Zsh to Prezto configurations (this will overwrite default Zsh files)
-    echo -e "\nCreating Prezto symlinks"
-    ln -sf ~/.zprezto/runcoms/zlogin ~/.zlogin
-    ln -sf ~/.zprezto/runcoms/zlogout ~/.zlogout
-    ln -sf ~/.zprezto/runcoms/zpreztorc ~/.zpreztorc
-    ln -sf ~/.zprezto/runcoms/zprofile ~/.zprofile
-    ln -sf ~/.zprezto/runcoms/zshenv ~/.zshenv
-    ln -sf ~/.zprezto/runcoms/zshrc ~/.zshrc
+    # echo -e "\nCreating Prezto symlinks"
+    # ln -sf ~/.zprezto/runcoms/zlogin ~/.zlogin
+    # ln -sf ~/.zprezto/runcoms/zlogout ~/.zlogout
+    # ln -sf ~/.zprezto/runcoms/zpreztorc ~/.zpreztorc
+    # ln -sf ~/.zprezto/runcoms/zprofile ~/.zprofile
+    # ln -sf ~/.zprezto/runcoms/zshenv ~/.zshenv
+    # ln -sf ~/.zprezto/runcoms/zshrc ~/.zshrc
 
     # Patch Prezto runcoms
     echo -e "\nPatching Prezto runcoms"
