@@ -163,13 +163,13 @@ if [[ "$OS" == "Linux" ]] || [[ "$OS" == "Darwin" ]] ; then
     #--------------------------------------------------
     # LSDeluxe
     #--------------------------------------------------
-    echo -e "\nInstalling LSDeluxe"
-    if [[ "$OS" == "Linux" ]]; then
-        sudo snap install lsd &> /dev/null
-    fi
-    if [[ "$OS" == "Darwin" ]]; then
-        brew install lsd &> /dev/null
-    fi
+    # echo -e "\nInstalling LSDeluxe"
+    # if [[ "$OS" == "Linux" ]]; then
+    #     sudo snap install lsd --classic &> /dev/null
+    # fi
+    # if [[ "$OS" == "Darwin" ]]; then
+    #     brew install lsd &> /dev/null
+    # fi
 
     #--------------------------------------------------
     # Prezto and plugins
@@ -200,19 +200,19 @@ if [[ "$OS" == "Linux" ]] || [[ "$OS" == "Darwin" ]] ; then
     #--------------------------------------------------
     # Theme (Powerlevel10k)
     #--------------------------------------------------
-    echo -e "\nDownloading theme configuration"
+    # echo -e "\nDownloading theme configuration"
 
-    if [[ "$WITH_FONT" == true ]]; then
-        P10K_CONFIG_FILE=".p10k.nerd-font.zsh"
-    else
-        P10K_CONFIG_FILE=".p10k.zsh"
-    fi
+    # if [[ "$WITH_FONT" == true ]]; then
+    #     P10K_CONFIG_FILE=".p10k.nerd-font.zsh"
+    # else
+    #     P10K_CONFIG_FILE=".p10k.zsh"
+    # fi
 
-    (cd ~/ && curl -o ".p10k.zsh" "https://raw.githubusercontent.com/JGroxz/presto-prezto/main/${P10K_CONFIG_FILE}") &> /dev/null
-    if [[ "$OS" == "Linux" ]]; then
-        sudo cp /home/"$(whoami)"/.p10k.zsh /root/
-    fi
-    echo -e "\nTheme configuration done"
+    # (cd ~/ && curl -o ".p10k.zsh" "https://raw.githubusercontent.com/nathanbraun/presto-prezto/main/${P10K_CONFIG_FILE}") &> /dev/null
+    # if [[ "$OS" == "Linux" ]]; then
+    #     sudo cp /home/"$(whoami)"/.p10k.zsh /root/
+    # fi
+    # echo -e "\nTheme configuration done"
 
     #--------------------------------------------------
     # Meslo Nerd Font (recommended by the creator of Powerlevel10k theme)
